@@ -1,8 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-export default Display = () => {
-    const [ balls, setBalls ] = useState()
+const Display = (props) => {
 
-
-    
+    return(
+        <div>
+            <div>
+                Balls: {props.balls}
+            </div>
+            <div>
+                Strikes: {props.strikes}
+            </div>
+        </div>
+    )
 }
+
+export default Display
