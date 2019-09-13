@@ -1,11 +1,12 @@
 import React from 'react';
+import { strikeFN } from '../App';
 
 const Dashboard = (props) => {
-    
+    console.log(props)
 
     return(
         <div>
-            <button>Strike</button>
+            <button onClick={props.strikeFN()}>Strike</button>
             <button>Ball</button>
             <button>Foul</button>
             <button>Hit</button>
